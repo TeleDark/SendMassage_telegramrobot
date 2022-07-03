@@ -1,4 +1,4 @@
-# Telegram robot to send text, photos and songs to your channel
+# Telegram robot to send Message, photos and Songs to your channel
 
 - quran
 - music
