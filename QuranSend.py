@@ -1,10 +1,9 @@
 import requests
 import os
-
 #token bot
-token = "Your robot token"
-# chanel or group id 
-chat_id = "Your chat id" # chat id
+token = ""
+# channel or group id 
+chat_id = "@example-channel" # chat id
 
 #addr page number file
 file_addr = './number.txt'
@@ -26,7 +25,7 @@ new_number.close()
 img_file = "./image/{}.jpg".format(page_number)
 
 #system sleep for save data 
-os.system("sleep 5")
+os.system("sleep 38")
 
 #url send data to the telegram
 url = f"https://api.telegram.org/bot{token}/sendPhoto"
@@ -41,3 +40,4 @@ payload = {'caption' : """
 """.format(page_number,chat_id)}
 #send image to the telegram chanel
 requests.get(url, params={"chat_id": chat_id}, files=files,data=payload)
+
